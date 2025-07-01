@@ -1,0 +1,9 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="ContentGrid" extends="RowList">
+    <script type="text/brightscript" uri="pkg:/components/ContentGrid.brs" />
+    
+    <interface>
+        <field id="itemSelected" type="integer" />
+    </interface>
+</component>

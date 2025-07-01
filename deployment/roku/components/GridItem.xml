@@ -1,0 +1,41 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="GridItem" extends="Group">
+    <script type="text/brightscript" uri="pkg:/components/GridItem.brs" />
+    
+    <children>
+        <!-- Item Background -->
+        <Rectangle id="itemBackground" 
+                   width="300" 
+                   height="200" 
+                   color="0x333333FF" />
+        
+        <!-- Poster Image -->
+        <Poster id="itemPoster"
+                width="300"
+                height="150"
+                loadDisplayMode="scaleToZoom" />
+        
+        <!-- Title Label -->
+        <Label id="itemTitle"
+               width="290"
+               height="40"
+               translation="[5, 155]"
+               font="font:SmallBoldSystemFont"
+               color="0xFFFFFFFF"
+               horizAlign="left"
+               vertAlign="center" />
+        
+        <!-- Focus Rectangle -->
+        <Rectangle id="focusRect"
+                   width="300"
+                   height="200"
+                   color="0x00000000"
+                   uri="pkg:/images/focus_border.png"
+                   visible="false" />
+    </children>
+    
+    <interface>
+        <field id="itemContent" type="node" onChange="onContentSet" />
+    </interface>
+</component>

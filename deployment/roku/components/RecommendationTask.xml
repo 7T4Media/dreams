@@ -1,0 +1,11 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="RecommendationTask" extends="Task">
+    <script type="text/brightscript" uri="pkg:/components/RecommendationTask.brs" />
+    
+    <interface>
+        <field id="currentContent" type="node" />
+        <field id="trigger" type="string" />
+        <field id="recommendations" type="node" />
+    </interface>
+</component>

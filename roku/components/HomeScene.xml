@@ -1,0 +1,41 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="HomeScene" extends="Scene">
+    <script type="text/brightscript" uri="pkg:/components/HomeScene.brs" />
+    
+    <children>
+        <!-- Background -->
+        <Rectangle id="background" width="1280" height="720" color="0x000000FF" />
+        
+        <!-- Header -->
+        <Label id="headerTitle" 
+               text="Dr33MTV - Global Music Culture" 
+               font="font:LargeBoldSystemFont" 
+               color="0xFFFFFFFF"
+               translation="[50, 30]" />
+        
+        <!-- Content Grid -->
+        <ContentGrid id="contentGrid"
+                     translation="[50, 100]"
+                     itemSize="[300, 200]"
+                     itemSpacing="[20, 20]"
+                     numColumns="4"
+                     numRows="3" />
+        
+        <!-- Video Player (initially hidden) -->
+        <VideoPlayer id="videoPlayer"
+                     translation="[0, 0]"
+                     width="1280"
+                     height="720"
+                     visible="false" />
+        
+        <!-- Loading Indicator -->
+        <BusySpinner id="loadingSpinner"
+                     translation="[640, 360]"
+                     visible="true" />
+    </children>
+    
+    <interface>
+        <field id="contentReady" type="boolean" />
+    </interface>
+</component>

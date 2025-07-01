@@ -1,0 +1,10 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="VideoPlayer" extends="Video">
+    <script type="text/brightscript" uri="pkg:/components/VideoPlayer.brs" />
+    
+    <interface>
+        <field id="playbackPosition" type="integer" />
+        <field id="aiRecommendations" type="node" />
+    </interface>
+</component>
